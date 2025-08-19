@@ -61,6 +61,6 @@ public class exercicio1 {
             }
             System.out.println("Encerrando o programa...");
             break;
-    }
+        }
     }
 }
