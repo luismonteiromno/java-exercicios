@@ -1,15 +1,17 @@
+import java.util.Scanner;
+
 public class exercicio1 {
     // Definindo o metódo para retornar uma nota float
-    public static float retornarNotaFloat(String nota) {
-        // Tranformando a string em float
-        float notaFloat = Float.parseFloat(nota);
-        // Validando a nota
-        if (notaFloat < 0 || notaFloat > 10) {
-            System.out.println("Nota1 inválida");
-        }
-        // Retornando a nota
-        return notaFloat;
-    }
+    // private static float retornarNotaFloat(String nota) {
+    //     // Tranformando a string em float
+    //     float notaFloat = Float.parseFloat(nota);
+    //     // Validando a nota
+    //     if (notaFloat < 0 || notaFloat > 10) {
+    //         System.out.println("Nota1 inválida");
+    //     }
+    //     // Retornando a nota
+    //     return notaFloat;
+    // }
 
     public static void main(String[] args) {
         // Definindo as variáveis de notas dos alunos
@@ -22,18 +24,20 @@ public class exercicio1 {
         final Float MEDIA = 6.0f;
         Boolean rodarNovamente = true;
 
+        Scanner scanner = new Scanner(System.in);
+
         while (rodarNovamente){
             System.out.println("Digite a sua primeira nota: ");
-            nota1 = retornarNotaFloat(System.console().readLine());
+            nota1 = scanner.nextFloat();
 
             System.out.println("Digite a sua segunda nota: ");
-            nota2 = retornarNotaFloat(System.console().readLine());
+            nota2 = scanner.nextFloat();
 
             System.out.println("Digite a sua terceira nota: ");
-            nota3 = retornarNotaFloat(System.console().readLine());
+            nota3 = scanner.nextFloat();
 
             System.out.println("Digite a sua quarta nota: ");
-            nota4 = retornarNotaFloat(System.console().readLine());
+            nota4 = scanner.nextFloat();
 
             mediaAluno = (nota1 + nota2 + nota3 + nota4) / 4;
 
@@ -46,7 +50,8 @@ public class exercicio1 {
             }
             System.out.println("Deseja calcular outra média? (S/N)");
 
-            String resposta = System.console().readLine();
+            String resposta = scanner.next();
+            scanner.nextLine();
             if (
                 resposta.equals("S") || resposta.equals("s") 
                 || resposta.equals("Sim") || resposta.equals("sim")
