@@ -56,8 +56,10 @@ public class exercicio1 {
                 resposta.equals("S") || resposta.equals("s") 
                 || resposta.equals("Sim") || resposta.equals("sim")
             ) {
+                System.out.println("Reiniciando o cálculo da nota...");
                 continue;
             }
+            System.out.println("Encerrando o programa...");
             break;
     }
     }
