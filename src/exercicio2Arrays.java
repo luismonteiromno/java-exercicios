@@ -1,11 +1,12 @@
 // lidando com arrays
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class exercicio2Arrays {
     public static void main(String[] args) {
 
-        String[] nomes = new String[5];
+        String[] nomes = {"Luis", "Joao", "Maria"};
         String[] animais = {"Cachorro", "gato", "passaros"};
         Object[] arrayObjeto = {1, "oi", true};
         List<Object> arrayList = new ArrayList<>();
@@ -15,6 +16,7 @@ public class exercicio2Arrays {
         arrayList.add(true);
 
         System.out.println(nomes[0]);
+        System.out.println(Arrays.toString(animais));
 
         System.out.println("For normal do Java");
         for (int i = 0; i < animais.length; i++) {
