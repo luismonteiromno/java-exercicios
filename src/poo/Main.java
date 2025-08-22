@@ -8,6 +8,8 @@ public class Main {
         loja.LojaAberta();
         loja.LojaFechada();
 
-        loja.exibirDetalhesLoja();
+        // loja.exibirDetalhesLoja();
+        System.out.println(loja.getNome());
+        System.out.println(loja.getEndereco());
     }
 }
