@@ -1,4 +1,6 @@
-public class LojaEletronicoInterface implements Interface{
+package poo.interfaces;
+
+public class LojaEletronicoInterface implements Interface {
     String nome;
     String cnpj;
 
